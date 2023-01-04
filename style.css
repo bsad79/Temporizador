@@ -1,0 +1,121 @@
+*{
+    background-color: rgb(50, 50, 50);
+    margin: 0;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.divUm{
+    display: grid;
+    grid-template-rows: 20fr 4fr 1fr;
+    grid-template-areas:
+        'divDois'
+        'botao';
+}
+
+.divDois{
+    grid-area: divDois;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-areas:
+        'relogioMinutos doisPontos relogioSegundos'
+}
+
+#relogioMinutos{
+    grid-area: relogioMinutos;
+    width: 100%;
+}
+
+#doisPontos{
+    grid-area: doisPontos;
+    height: 100%;
+    width: 100%;
+}
+
+#relogioSegundos{
+    grid-area: relogioSegundos;
+    width: 100%;
+}
+
+#botao{
+    grid-area: botao;
+    height: 100%;
+    width: 80%;
+}
+
+input{
+    font-size: 45em;
+    text-align: center;
+    background-color: transparent!important;
+    padding: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    border-top: transparent!important;
+    border-right: transparent!important;
+    border-left: transparent!important;
+    max-width: 90%;
+    -webkit-box-flex: 1;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    line-height: 1.21428571em;
+    padding: .67857143em 1em;
+    border: 1px solid rgb(34, 36, 38);
+    border-radius: .28571429rem;
+    -webkit-transition: border-color .1s ease,-webkit-box-shadow .1s ease;
+    transition: border-color .1s ease,-webkit-box-shadow .1s ease;
+    transition: box-shadow .1s ease,border-color .1s ease;
+    transition: box-shadow .1s ease,border-color .1s ease,-webkit-box-shadow .1s ease;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input:focus {
+    background-color: transparent!important;
+    padding: 0!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    border-top: transparent!important;
+    border-bottom-color: rgb(255, 255, 255);
+    border-right: transparent!important;
+    border-left: transparent!important;
+}
+
+span{
+    font-size: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: none;
+    transition: 0.1s;
+    height: 10vh;
+    width: 10vw;
+    font-size: 5em;
+}
+
+button:hover{
+    background-color: rgb(123, 123, 123);
+}
+
+button:active{
+    background-color: white;
+    color: black;
+}

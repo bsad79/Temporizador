@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Temporizador</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./style.css">  
+    </head>
+    <body>
+
+        <div class="divUm">
+            <div class="divDois">
+                <input type="number" onchange="verificacao(event)" min="00" max="59" id="relogioMinutos" value="05"></input>
+                <span id="doisPontos">:</span>
+                <input type="number" onchange="verificacao(event)" min="00" max="59" id="relogioSegundos" value="00"></input>
+            </div>
+            <button id="botao" onclick="pressionar()">Iniciar</button>
+        </div>
+
+        <script src="./code.js"></script>
+    </body>
+</html>
